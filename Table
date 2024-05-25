@@ -1,0 +1,23 @@
+your_list = ['bread', 'milk', 'sugar', 'tea']
+
+print("{0:30}    {1:30}    {2:30}    {3:30}".format('Column 1', 'Column 2', 'Column 3', 'Column 4'))
+print("{0:30}    {1:30}    {2:30}    {3:30}".format(your_list[0], your_list[1], your_list[2], your_list[3]))
+
+print(your_list.index('milk')) #position or in which index the milk got stored
+print(your_list[0]) #to print a particular element or to find a particular elementin the list 
+print(your_list.count('milk')) #no.of occurance
+your_list.append('t') #to add another item in the list
+print(your_list)
+del your_list[0]
+print(your_list)
+your_list[0]='coff' #replace
+print(your_list)
+
+Output:-
+Column 1                          Column 2                          Column 3                          Column 4                      
+bread                             milk                              sugar                             tea                           
+1
+bread
+1
+['milk', 'sugar', 'tea']
+['coff', 'sugar', 'tea']
